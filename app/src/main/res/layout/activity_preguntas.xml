@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/final_fondo"
+        tools:context=".Preguntas.Preguntas">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                android:paddingTop="40dp"
+                android:text="Preguntas frecuentes"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/darkgray"
+                android:textStyle="bold" />
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="80"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingBottom="25dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvPrestampo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:text="¿Cómo sacar un libro en préstamo de la biblioteca?" />
+
+                    <TextView
+                        android:id="@+id/tvCaope"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:text="¿Qué necesito para inscribirme a CAOPE?" />
+
+                    <TextView
+                        android:id="@+id/tvRepetir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:text="¿Qué necesito para repetir el año?" />
+
+                    <TextView
+                        android:id="@+id/tvReinscripciones"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:text="¿Cuándo son las reinscripciones?" />
+
+
+                    <TextView
+                        android:id="@+id/tvPAE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:text="¿Cómo me inscribo al PAE?" />
+
+                    <TextView
+                        android:id="@+id/tvExtra"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:text="¿Cómo me inscribo al extraordinario?" />
+
+                    <TextView
+                        android:id="@+id/tvRecursa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:text="¿Qué necesito para recursar?" />
+
+
+                    <TextView
+                        android:id="@+id/tvCredeUnam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:text="¿Cómo hago la reposición de mi credencial UNAM?" />
+
+                    <TextView
+                        android:id="@+id/tvCredeCch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:text="¿Cómo hago la reposición de mi credencial CCH?" />
+
+                    <TextView
+                        android:id="@+id/tvConstancia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:text="¿Cómo solicito una constancia de estudios?" />
+
+                    <TextView
+                        android:id="@+id/tvSeguro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:text="¿Cómo tramito mi seguro facultativo?" />
+
+                    <TextView
+                        android:id="@+id/tvBeca"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:text="¿Cómo puedo tramitar una beca?" />
+
+
+                    <TextView
+                        android:id="@+id/tvOpciones"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:text="¿Cómo me inscribo a Opciones técnicas?" />
+
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

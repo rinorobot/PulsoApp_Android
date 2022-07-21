@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/final_fondo"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".Tramites.Tramites">
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight="15"
+            android:paddingTop="20dp"
+            android:textColor="@color/darkgray"
+            android:text="Cómo tramitar:"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="85"
+            android:layout_marginBottom="10dp"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+
+                >
+
+                <Button
+                    android:id="@+id/btn_credenciales"
+                    android:layout_width="wrap_content"
+                    android:layout_height="69dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/final_credencial" />
+
+                <Button
+                    android:id="@+id/btn_recursa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="69dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/final_recursa" />
+
+                <Button
+                    android:id="@+id/btn_pae"
+                    android:layout_width="wrap_content"
+                    android:layout_height="69dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/final_pae" />
+
+                <Button
+                    android:id="@+id/btn_extra"
+                    android:layout_width="match_parent"
+                    android:layout_height="69dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/final_extra" />
+
+                <Button
+                    android:id="@+id/btn_comprobante"
+                    android:layout_width="match_parent"
+                    android:layout_height="69dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/final_comprobante" />
+
+                <Button
+                    android:id="@+id/btn_seguro"
+                    android:layout_width="match_parent"
+                    android:layout_height="69dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/final_seguro" />
+
+                <Button
+                    android:id="@+id/btn_certificado"
+                    android:layout_width="match_parent"
+                    android:layout_height="69dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/final_certificado" />
+
+                <Button
+                    android:id="@+id/btn_seleccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="69dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/final_seleccion" />
+
+                <Button
+                    android:id="@+id/btn_becas"
+                    android:layout_width="match_parent"
+                    android:layout_height="69dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/final_becas" />
+
+                <Button
+                    android:id="@+id/btn_constancias"
+                    android:layout_width="match_parent"
+                    android:layout_height="69dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/final_constancias" />
+
+                <Button
+                    android:id="@+id/btn_inscripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="69dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/final_inscripcion" />
+
+                <Button
+                    android:id="@+id/btn_opciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="69dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/final_opciones" />
+
+                <Button
+                    android:id="@+id/btn_pase"
+                    android:layout_width="match_parent"
+                    android:layout_height="69dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/final_pase" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</layout>

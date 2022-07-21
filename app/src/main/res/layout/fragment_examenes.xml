@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/final_fondo"
+
+    tools:context=".fragments.ExamenesFragment" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:gravity="center"
+        android:text="@string/simulador_de_ex_menes"
+        android:textSize="21sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_examenes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80"
+        />
+</LinearLayout>

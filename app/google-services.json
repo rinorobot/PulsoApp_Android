@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "293218024166",
+    "firebase_url": "https://appcchiosyandroid-default-rtdb.firebaseio.com",
+    "project_id": "appcchiosyandroid",
+    "storage_bucket": "appcchiosyandroid.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:293218024166:android:3ddb8d1e530e8d702ed927",
+        "android_client_info": {
+          "package_name": "com.rinosystems.pulsoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "293218024166-gaeop50vug0iacr974vt9r46lba4v98l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwb-9AIS-C84rzFNevc73NdQLHC4djqp0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "293218024166-gaeop50vug0iacr974vt9r46lba4v98l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "293218024166-inouc501ib8o90s2bvu7gvjouc895a4t.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "Rino-Systems.Pulso"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

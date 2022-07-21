@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/color_progressbar.xml" value="0.1905" />
+        <entry key="app/src/main/res/drawable/custom_tab.xml" value="0.2015" />
+        <entry key="app/src/main/res/drawable/final_procedures_ripple.xml" value="0.207" />
+        <entry key="app/src/main/res/drawable/final_questions_ripple.xml" value="0.207" />
+        <entry key="app/src/main/res/drawable/final_security_ripple.xml" value="0.207" />
+        <entry key="app/src/main/res/drawable/final_themes_ripple.xml" value="0.207" />
+        <entry key="app/src/main/res/drawable/first_gradients.xml" value="0.2215" />
+        <entry key="app/src/main/res/drawable/four_gradient.xml" value="0.2215" />
+        <entry key="app/src/main/res/drawable/ic_notification.xml" value="0.2025" />
+        <entry key="app/src/main/res/drawable/ic_quiz.xml" value="0.2025" />
+        <entry key="app/src/main/res/drawable/second_gradient.xml" value="0.2215" />
+        <entry key="app/src/main/res/drawable/splash_background.xml" value="0.207" />
+        <entry key="app/src/main/res/drawable/third_gradient.xml" value="0.2215" />
+        <entry key="app/src/main/res/layout/activity_arma.xml" value="0.16354166666666667" />
+        <entry key="app/src/main/res/layout/activity_becas.xml" value="0.20052083333333334" />
+        <entry key="app/src/main/res/layout/activity_caope.xml" value="0.19479166666666667" />
+        <entry key="app/src/main/res/layout/activity_certificado.xml" value="0.20052083333333334" />
+        <entry key="app/src/main/res/layout/activity_comprobante.xml" value="0.20052083333333334" />
+        <entry key="app/src/main/res/layout/activity_constancia.xml" value="0.20052083333333334" />
+        <entry key="app/src/main/res/layout/activity_crede_cch.xml" value="0.20052083333333334" />
+        <entry key="app/src/main/res/layout/activity_crede_unam.xml" value="0.20052083333333334" />
+        <entry key="app/src/main/res/layout/activity_credenciales.xml" value="0.20052083333333334" />
+        <entry key="app/src/main/res/layout/activity_cuestionario.xml" value="0.19479166666666667" />
+        <entry key="app/src/main/res/layout/activity_denuncia.xml" value="0.16354166666666667" />
+        <entry key="app/src/main/res/layout/activity_detalle_noticia.xml" value="0.2015625" />
+        <entry key="app/src/main/res/layout/activity_equidad.xml" value="0.19479166666666667" />
+        <entry key="app/src/main/res/layout/activity_examen.xml" value="0.3705263157894737" />
+        <entry key="app/src/main/res/layout/activity_exterior.xml" value="0.16354166666666667" />
+        <entry key="app/src/main/res/layout/activity_extra.xml" value="0.20052083333333334" />
+        <entry key="app/src/main/res/layout/activity_faltas.xml" value="0.16354166666666667" />
+        <entry key="app/src/main/res/layout/activity_fuga.xml" value="0.16354166666666667" />
+        <entry key="app/src/main/res/layout/activity_genero.xml" value="0.16354166666666667" />
+        <entry key="app/src/main/res/layout/activity_identidad.xml" value="0.18072916666666666" />
+        <entry key="app/src/main/res/layout/activity_incendio.xml" value="0.16354166666666667" />
+        <entry key="app/src/main/res/layout/activity_informacion.xml" value="0.18333333333333332" />
+        <entry key="app/src/main/res/layout/activity_inscripcion.xml" value="0.20052083333333334" />
+        <entry key="app/src/main/res/layout/activity_interior.xml" value="0.16354166666666667" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.3843329253365973" />
+        <entry key="app/src/main/res/layout/activity_opciones.xml" value="0.20052083333333334" />
+        <entry key="app/src/main/res/layout/activity_pae.xml" value="0.20052083333333334" />
+        <entry key="app/src/main/res/layout/activity_pase.xml" value="0.20052083333333334" />
+        <entry key="app/src/main/res/layout/activity_preguntas.xml" value="0.19479166666666667" />
+        <entry key="app/src/main/res/layout/activity_prestamo.xml" value="0.19479166666666667" />
+        <entry key="app/src/main/res/layout/activity_prococolos.xml" value="0.18645833333333334" />
+        <entry key="app/src/main/res/layout/activity_recomendaciones.xml" value="0.20052083333333334" />
+        <entry key="app/src/main/res/layout/activity_recursa.xml" value="0.20052083333333334" />
+        <entry key="app/src/main/res/layout/activity_reinscripcion.xml" value="0.19479166666666667" />
+        <entry key="app/src/main/res/layout/activity_repetir.xml" value="0.19479166666666667" />
+        <entry key="app/src/main/res/layout/activity_resultados.xml" value="0.3868131868131868" />
+        <entry key="app/src/main/res/layout/activity_seguridad.xml" value="0.20052083333333334" />
+        <entry key="app/src/main/res/layout/activity_seguro.xml" value="0.20052083333333334" />
+        <entry key="app/src/main/res/layout/activity_seleccion.xml" value="0.20052083333333334" />
+        <entry key="app/src/main/res/layout/activity_sendero.xml" value="0.20052083333333334" />
+        <entry key="app/src/main/res/layout/activity_sismo.xml" value="0.16354166666666667" />
+        <entry key="app/src/main/res/layout/activity_sustancias.xml" value="0.16354166666666667" />
+        <entry key="app/src/main/res/layout/activity_telefonos.xml" value="0.20052083333333334" />
+        <entry key="app/src/main/res/layout/activity_temas.xml" value="0.19479166666666667" />
+        <entry key="app/src/main/res/layout/activity_tramites.xml" value="0.20052083333333334" />
+        <entry key="app/src/main/res/layout/activity_transporte.xml" value="0.20052083333333334" />
+        <entry key="app/src/main/res/layout/activity_urgencia.xml" value="0.16354166666666667" />
+        <entry key="app/src/main/res/layout/activity_violentometro.xml" value="0.19479166666666667" />
+        <entry key="app/src/main/res/layout/custom_tab.xml" value="0.37604166666666666" />
+        <entry key="app/src/main/res/layout/fragment_examenes.xml" value="0.19479166666666667" />
+        <entry key="app/src/main/res/layout/fragment_informacion.xml" value="0.20052083333333334" />
+        <entry key="app/src/main/res/layout/fragment_noticias.xml" value="0.18072916666666666" />
+        <entry key="app/src/main/res/layout/fragment_publicaciones.xml" value="0.26614583333333336" />
+        <entry key="app/src/main/res/layout/infi.xml" value="0.18229166666666666" />
+        <entry key="app/src/main/res/layout/item_examenes.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/item_noticias.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/item_publicaciones.xml" value="0.1796875" />
+        <entry key="app/src/main/res/layout/tab_custom.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/titulos_publicaciones.xml" value="0.26510416666666664" />
+        <entry key="app/src/main/res/menu/menu.xml" value="0.18229166666666666" />
+        <entry key="app/src/main/res/xml/network_security_config.xml" value="0.21458333333333332" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

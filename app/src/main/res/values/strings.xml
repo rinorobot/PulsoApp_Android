@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PulsoApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="noticias">Noticias</string>
+    <string name="exas">Exámenes</string>
+    <string name="publis">Publicaciones</string>
+    <string name="info">Información</string>
+    <string name="irSitio">Ir al sitio</string>
+    <string name="leer">Leer </string>
+    <string name="simulador_de_ex_menes">Simulador de exámenes</string>
+</resources>

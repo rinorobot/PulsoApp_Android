@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/final_fondo"
+        tools:context=".Temas.Cuestionario">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="87">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1. ¿Sientes que tu pareja constantemente te está controlando 'por amor'?" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/question1"
+                    android:layout_margin="10dp">
+
+                    <RadioButton
+                        android:text="Sí"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ1Answer1"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:text="A veces"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ1Answer2"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:text="Rara vez"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ1Answer3"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:text="No"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ1Answer4"
+                        android:layout_weight="1" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2. ¿Te acusa de infidelidad o de que actúas en forma sospechosa?" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/question2"
+                    android:layout_margin="10dp">
+
+                    <RadioButton
+                        android:text="Sí"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ2Answer1"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:text="A veces"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ2Answer2"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:text="Rara vez"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ2Answer3"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:text="No"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ2Answer4"
+                        android:layout_weight="1" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3. ¿Has perdido contacto con amigos, familiares, compañeras/os de tu escuela o trabajo para evitar que tu pareja se moleste?" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/question3"
+                    android:layout_margin="10dp">
+
+                    <RadioButton
+                        android:text="Sí"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ3Answer1"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:text="A veces"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ3Answer2"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:text="Rara vez"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ3Answer3"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:text="No"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ3Answer4"
+                        android:layout_weight="1" />
+                </RadioGroup>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4. ¿Te critica y humilla en público o en privado, opina negativamente sobre tu apariencia, tu forma de ser o el modo en que te vistes?" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/question4"
+                    android:layout_margin="10dp">
+
+                    <RadioButton
+                        android:text="Sí"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ4Answer1"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:text="A veces"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ4Answer2"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:text="Rara vez"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ4Answer3"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:text="No"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ4Answer4"
+                        android:layout_weight="1" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5. ¿Tu pareja tiene cambios bruscos de humor o se comporta distinto contigo en público, como si fuera otra persona?" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/question5"
+                    android:layout_margin="10dp">
+
+                    <RadioButton
+                        android:text="Sí"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ5Answer1"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:text="A veces"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ5Answer2"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:text="Rara vez"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ5Answer3"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:text="No"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ5Answer4"
+                        android:layout_weight="1" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6. ¿Sientes que está en permanente tensión y que, hagas lo que hagas, él se irrita o te culpabiliza de sus cambios?" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/question6"
+                    android:layout_margin="10dp">
+
+                    <RadioButton
+                        android:text="Sí"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ6Answer1"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:text="A veces"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ6Answer2"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:text="Rara vez"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ6Answer3"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:text="No"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ6Answer4"
+                        android:layout_weight="1" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7. ¿Te ha golpeado con sus manos, te ha jaloneado o te ha lanzado cosas cuando se enoja o cuando discuten?" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/question7"
+                    android:layout_margin="10dp">
+
+                    <RadioButton
+                        android:text="Sí"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ7Answer1"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:text="A veces"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ7Answer2"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:text="Rara vez"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ7Answer3"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:text="No"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ7Answer4"
+                        android:layout_weight="1" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8. ¿Te ha amenazado alguna vez con un objeto o armas, o con matarse él, a ti o a algún miembro de la familia si no le obedeces?" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/question8"
+                    android:layout_margin="10dp">
+
+                    <RadioButton
+                        android:text="Sí"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ8Answer1"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:text="A veces"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ8Answer2"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:text="Rara vez"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ8Answer3"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:text="No"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ8Answer4"
+                        android:layout_weight="1" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9. ¿Sientes que cedes a sus peticiones sexuales por temor, o te ha forzado a tener relaciones, amenazándote que si no tiene relaciones contigo, entonces se va con otra?" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/question9"
+                    android:layout_margin="10dp">
+
+                    <RadioButton
+                        android:text="Sí"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ9Answer1"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:text="A veces"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ9Answer2"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:text="Rara vez"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ9Answer3"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:text="No"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ9Answer4"
+                        android:layout_weight="1" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10. Después de un episodio violento, ¿se muestra cariñoso y atento, te regala cosas y te promete que nunca más volverá a pegarte o insultarte y te dice que 'todo cambiará'?"
+
+                    />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/question10"
+                    android:layout_margin="10dp">
+
+                    <RadioButton
+                        android:text="Sí"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ10Answer1"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:text="A veces"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ10Answer2"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:text="Rara vez"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ10Answer3"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:text="No"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ10Answer4"
+                        android:layout_weight="1" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11. ¿Has buscado o has recibido ayuda por lesiones que él te ha causado? (primeros auxilios, atención médica o legal)"
+
+                    />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/question11"
+                    android:layout_margin="10dp">
+
+                    <RadioButton
+                        android:text="Sí"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ11Answer1"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:text="A veces"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ11Answer2"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:text="Rara vez"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ11Answer3"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:text="No"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ11Answer4"
+                        android:layout_weight="1" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12. ¿Es violento con otras personas o se pelea a golpes con otros hombres?
+"
+
+                    />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/question12"
+                    android:layout_margin="10dp">
+
+                    <RadioButton
+                        android:text="Sí"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ12Answer1"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:text="A veces"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ12Answer2"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:text="Rara vez"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ12Answer3"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:text="No"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbQ12Answer4"
+                        android:layout_weight="1" />
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <Button
+            android:text="Resultado"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="13"
+            android:layout_margin="5dp"
+            android:textColor="@color/white"
+            android:background="@drawable/second_gradient"
+            android:id="@+id/btn_result" />
+
+    </LinearLayout>
+</layout>

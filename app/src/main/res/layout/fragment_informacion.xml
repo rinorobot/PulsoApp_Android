@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/final_fondo"
+    tools:context=".fragments.InformacionFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        >
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:paddingTop="20dp"
+            android:text="Consulta información sobre:"
+            android:gravity="center_horizontal"
+
+            android:textSize="21sp"
+            android:layout_gravity="center_vertical"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            />
+
+        <Button
+            android:id="@+id/btn_procedures"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:layout_margin="12dp"
+            android:background="@drawable/final_procedures_ripple" />
+
+        <Button
+            android:id="@+id/btn_security"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:layout_margin="12dp"
+            android:background="@drawable/final_security_ripple" />
+
+        <Button
+            android:id="@+id/btn_themes"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:layout_margin="12dp"
+            android:background="@drawable/final_themes_ripple" />
+
+        <Button
+            android:id="@+id/btn_questions"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:layout_margin="12dp"
+            android:background="@drawable/final_questions_ripple" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

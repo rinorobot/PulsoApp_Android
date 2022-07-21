@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.rinosystems.pulsoapp">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo_color_nau"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:targetApi="31">
+        <activity
+            android:name=".Preguntas.Repetir"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".Preguntas.Reinscripcion"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Preguntas.Prestamo"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Preguntas.Caope"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Preguntas.Preguntas"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Temas.Violentometro"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Temas.Cuestionario"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Temas.Equidad"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Temas.Identidad"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Temas.Temas"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Seguridad.Denuncia"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Seguridad.Interior"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Seguridad.Sustancias"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Seguridad.Genero"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Seguridad.Urgencia"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Seguridad.Fuga"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Seguridad.Incendio"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Seguridad.Faltas"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Seguridad.SIsmo"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Seguridad.Exterior"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Seguridad.Arma"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Seguridad.Prococolos"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Seguridad.Sendero"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Seguridad.Transporte"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Seguridad.Telefonos"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Seguridad.Recomendaciones"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Seguridad.Seguridad"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Tramites.CredeCCH"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Tramites.CredeUnam"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Tramites.Pase"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Tramites.Opciones"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Tramites.Inscripcion"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Tramites.Constancia"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Tramites.Becas"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Tramites.Seleccion"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Tramites.Certificado"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Tramites.Seguro"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Tramites.Comprobante"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Tramites.Extra"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Tramites.Pae"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Tramites.Recursa"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Tramites.Credenciales"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Tramites.Tramites"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".InformacionActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Resultados"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Examen"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".DetalleNoticia"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            />
+    </application>
+
+</manifest>
