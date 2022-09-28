@@ -60,7 +60,7 @@ class Resultados : AppCompatActivity() {
                 }
 
 
-                putExtra(Intent.EXTRA_TEXT, "Obtuve ${df.format(calif)} en el examen de ${nombre} "+emoji)
+                putExtra(Intent.EXTRA_TEXT, "Obtuve ${df.format(calif)} en el examen de ${nombre} "+emoji+" de @PulsoApp")
                 type = "text/plain"
             }
 

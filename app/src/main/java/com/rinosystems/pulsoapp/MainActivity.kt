@@ -1,35 +1,22 @@
 package com.rinosystems.pulsoapp
 
-import android.app.Service
-import android.content.Context
+
 import android.content.Intent
-import android.net.ConnectivityManager
-import android.net.Network
-import android.net.NetworkInfo
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-
 import android.view.LayoutInflater
 import android.view.View
-
-
 import android.widget.TextView
-import android.widget.Toast
 import androidx.annotation.RequiresApi
-
-
 import androidx.core.content.ContextCompat
-
 import com.google.android.material.tabs.TabLayoutMediator
 import com.rinosystems.pulsoapp.Network.NetworkStatus
 import com.rinosystems.pulsoapp.Network.NetworkStatusHelper
-
-
 import com.rinosystems.pulsoapp.adapters.ViewPagerAdapter
 import com.rinosystems.pulsoapp.databinding.ActivityMainBinding
 
-import kotlin.Exception
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -87,13 +74,13 @@ class MainActivity : AppCompatActivity() {
                     tab1.text = getString(R.string.publis)
                     tab1.setCompoundDrawablesWithIntrinsicBounds(0,R.drawable.publicaciones1x,0,0)
                     tab.setCustomView(tab1)
-                }
+                }/*
                 3->{
                     val tab1: TextView= LayoutInflater.from(this).inflate(R.layout.custom_tab,null) as TextView
                     tab1.text = getString(R.string.info)
                     tab1.setCompoundDrawablesWithIntrinsicBounds(0,R.drawable.menu1x,0,0)
                     tab.setCustomView(tab1)
-                }
+                }*/
             }
 
         }.attach()

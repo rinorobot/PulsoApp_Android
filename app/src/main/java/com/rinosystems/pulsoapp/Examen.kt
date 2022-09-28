@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.google.firebase.database.*
 import com.rinosystems.pulsoapp.databinding.ActivityExamenBinding
+import com.rinosystems.pulsoapp.imagenesZoom.*
 import com.rinosystems.pulsoapp.models.PreguntasData
 import com.squareup.picasso.Picasso
 
@@ -36,6 +37,8 @@ class Examen : AppCompatActivity() {
 
         val examen = intent.getStringExtra("examen")
         nombre = intent.getStringExtra("nombre")!!
+
+
 
         if (examen != null){
 
@@ -215,30 +218,55 @@ class Examen : AppCompatActivity() {
                         }else{
                             binding.imagenPregunta.visibility = View.VISIBLE
                             Picasso.get().load(preguntasLista[0].linkPregunta).into(binding.imagenPregunta)
+                            binding.imagenPregunta.setOnClickListener {
+                                intent = Intent(this@Examen,ZoomPregunta::class.java)
+                                intent.putExtra("imagen",preguntasLista[0].linkPregunta)
+                                startActivity(intent)
+                            }
                         }
                         if (preguntasLista[0].linkA.equals("")){
                             binding.imagenRespuestaA.visibility = View.GONE
                         }else{
                             binding.imagenRespuestaA.visibility = View.VISIBLE
                             Picasso.get().load(preguntasLista[0].linkA).into(binding.imagenRespuestaA)
+                            binding.imagenRespuestaA.setOnClickListener {
+                                intent = Intent(this@Examen,ZoomPregunta::class.java)
+                                intent.putExtra("imagen",preguntasLista[0].linkA)
+                                startActivity(intent)
+                            }
                         }
                         if (preguntasLista[0].linkB.equals("")){
                             binding.imagenRespuestaB.visibility = View.GONE
                         }else{
                             binding.imagenRespuestaB.visibility = View.VISIBLE
                             Picasso.get().load(preguntasLista[0].linkB).into(binding.imagenRespuestaB)
+                            binding.imagenRespuestaB.setOnClickListener {
+                                intent = Intent(this@Examen,ZoomPregunta::class.java)
+                                intent.putExtra("imagen",preguntasLista[0].linkB)
+                                startActivity(intent)
+                            }
                         }
                         if (preguntasLista[0].linkC.equals("")){
                             binding.imagenRespuestaC.visibility = View.GONE
                         }else{
                             binding.imagenRespuestaC.visibility = View.VISIBLE
                             Picasso.get().load(preguntasLista[0].linkC).into(binding.imagenRespuestaC)
+                            binding.imagenRespuestaC.setOnClickListener {
+                                intent = Intent(this@Examen,ZoomPregunta::class.java)
+                                intent.putExtra("imagen",preguntasLista[0].linkC)
+                                startActivity(intent)
+                            }
                         }
                         if (preguntasLista[0].linkD.equals("")){
                             binding.imagenRespuestaD.visibility = View.GONE
                         }else{
                             binding.imagenRespuestaD.visibility = View.VISIBLE
                             Picasso.get().load(preguntasLista[0].linkD).into(binding.imagenRespuestaD)
+                            binding.imagenRespuestaD.setOnClickListener {
+                                intent = Intent(this@Examen,ZoomPregunta::class.java)
+                                intent.putExtra("imagen",preguntasLista[0].linkD)
+                                startActivity(intent)
+                            }
                         }
 
 
@@ -285,30 +313,55 @@ class Examen : AppCompatActivity() {
         }else{
             binding.imagenPregunta.visibility = View.VISIBLE
             Picasso.get().load(preguntasLista[index].linkPregunta).into(binding.imagenPregunta)
+            binding.imagenPregunta.setOnClickListener {
+                intent = Intent(this@Examen,ZoomPregunta::class.java)
+                intent.putExtra("imagen",preguntasLista[index].linkPregunta)
+                startActivity(intent)
+            }
         }
         if (preguntasLista[index].linkA.equals("")){
             binding.imagenRespuestaA.visibility = View.GONE
         }else{
             binding.imagenRespuestaA.visibility = View.VISIBLE
             Picasso.get().load(preguntasLista[index].linkA).into(binding.imagenRespuestaA)
+            binding.imagenRespuestaA.setOnClickListener {
+                intent = Intent(this@Examen,ZoomPregunta::class.java)
+                intent.putExtra("imagen",preguntasLista[index].linkA)
+                startActivity(intent)
+            }
         }
         if (preguntasLista[index].linkB.equals("")){
             binding.imagenRespuestaB.visibility = View.GONE
         }else{
             binding.imagenRespuestaB.visibility = View.VISIBLE
             Picasso.get().load(preguntasLista[index].linkB).into(binding.imagenRespuestaB)
+            binding.imagenRespuestaB.setOnClickListener {
+                intent = Intent(this@Examen,ZoomPregunta::class.java)
+                intent.putExtra("imagen",preguntasLista[index].linkB)
+                startActivity(intent)
+            }
         }
         if (preguntasLista[index].linkC.equals("")){
             binding.imagenRespuestaC.visibility = View.GONE
         }else{
             binding.imagenRespuestaC.visibility = View.VISIBLE
             Picasso.get().load(preguntasLista[index].linkC).into(binding.imagenRespuestaC)
+            binding.imagenRespuestaC.setOnClickListener {
+                intent = Intent(this@Examen,ZoomPregunta::class.java)
+                intent.putExtra("imagen",preguntasLista[index].linkC)
+                startActivity(intent)
+            }
         }
         if (preguntasLista[index].linkD.equals("")){
             binding.imagenRespuestaD.visibility = View.GONE
         }else{
             binding.imagenRespuestaD.visibility = View.VISIBLE
             Picasso.get().load(preguntasLista[index].linkD).into(binding.imagenRespuestaD)
+            binding.imagenRespuestaD.setOnClickListener {
+                intent = Intent(this@Examen,ZoomPregunta::class.java)
+                intent.putExtra("imagen",preguntasLista[index].linkD)
+                startActivity(intent)
+            }
         }
 
     }

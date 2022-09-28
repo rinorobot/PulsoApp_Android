@@ -23,7 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="7"
-            android:background="#123C6B"
+            android:background="#007ac1"
             android:elevation="7dp"
             android:gravity="center_horizontal"
             >
@@ -88,7 +88,8 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="8"
-            android:background="#123C6B" />
+
+            android:background="#007ac1" />
 
 
     </LinearLayout>

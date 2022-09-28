@@ -16,7 +16,9 @@
     <color name="darkslateblue">#483D8B</color>
     <color name="indigo">#4B0082</color>
     <color name="slateblue">#6A5ACD</color>
-    <color name="pulsoappcolor">#184E77</color>
+    <color name="pulsoappcolor">#003c8f</color>
     <color name="darkgray">#757575</color>
+    <color name="lightgray">#D9D9D6</color>
+    <color name="casinegro">#5D5D5D</color>
 
 </resources>

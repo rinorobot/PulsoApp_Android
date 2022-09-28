@@ -136,10 +136,11 @@
                     app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
                 <TextView
-                    android:id="@+id/textView13"
+                    android:id="@+id/aviso"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="64dp"
+
+                    android:layout_marginTop="16dp"
                     android:layout_marginBottom="32dp"
                     android:text="Aviso de privacidad"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -147,6 +148,21 @@
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="32dp"
+                    android:text="Proyecto realizado con apoyo de UNAM DGAPA INFOCAB - PB100521"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/aviso" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
 
