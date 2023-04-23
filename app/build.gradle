@@ -68,6 +68,8 @@ dependencies {
  implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
     //Zoom y Swipe
     implementation 'com.github.MikeOrtiz:TouchImageView:1.4.1'
+    //Swipe
+    implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.2.0-alpha01")
  
 
 

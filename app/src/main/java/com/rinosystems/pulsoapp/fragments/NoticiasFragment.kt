@@ -13,6 +13,7 @@ import android.widget.Toast
 
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.google.firebase.database.*
 import com.rinosystems.pulsoapp.DetalleNoticia
 import com.rinosystems.pulsoapp.Network.NetworkStatus
@@ -28,6 +29,7 @@ class NoticiasFragment : Fragment(), NoticiasAdapter.MyViewHolder.OnNoticiasClic
     private lateinit var dbRef: DatabaseReference
     private lateinit var noticiasRV: RecyclerView
     private lateinit var noticiasLista: ArrayList<NoticiasData>
+    private lateinit var swipeNoticias: SwipeRefreshLayout
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -49,12 +51,28 @@ class NoticiasFragment : Fragment(), NoticiasAdapter.MyViewHolder.OnNoticiasClic
 
          val view = inflater.inflate(R.layout.fragment_noticias, container, false)
 
+        swipeNoticias = view.findViewById(R.id.swipeNoticias)
         noticiasRV = view.findViewById(R.id.lista_noticias)
         noticiasRV.layoutManager = LinearLayoutManager(requireContext())
         noticiasRV.setHasFixedSize(true)
 
+
         noticiasLista = arrayListOf()
         obtenerNoticias()
+
+
+        swipeNoticias.setOnRefreshListener {
+            swipeNoticias.setColorSchemeResources(R.color.colorBlueAdd)
+            noticiasRV.layoutManager = LinearLayoutManager(requireContext())
+            noticiasRV.setHasFixedSize(true)
+
+
+            noticiasLista = arrayListOf()
+            obtenerNoticias()
+            swipeNoticias.isRefreshing = false
+        }
+
+
 
 
 
