@@ -5,15 +5,21 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.database.*
+import com.rinosystems.pulsoapp.Network.RetofitClient
 import com.rinosystems.pulsoapp.R
 import com.rinosystems.pulsoapp.adapters.NoticiasAdapter
 import com.rinosystems.pulsoapp.adapters.PublicacionItemAdapter
 import com.rinosystems.pulsoapp.adapters.TitulosPublicacionesAdapter
 import com.rinosystems.pulsoapp.models.NoticiasData
+import com.rinosystems.pulsoapp.models.NuevoDataPublicacionesItem
 import com.rinosystems.pulsoapp.models.TitulosPublicaciones
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 import java.util.ArrayList
 
 
@@ -43,6 +49,22 @@ class PublicacionesFragment : Fragment(){
         titulosLista = arrayListOf()
 
         obtenerTitulos()
+
+        val publicaciones = RetofitClient.apiPublicaciones.getPublicaciones()
+
+        publicaciones.enqueue(object : Callback<NuevoDataPublicacionesItem>{
+            override fun onResponse(
+                call: Call<NuevoDataPublicacionesItem>,
+                response: Response<NuevoDataPublicacionesItem>
+            ) {
+                println(response.body())
+            }
+
+            override fun onFailure(call: Call<NuevoDataPublicacionesItem>, t: Throwable) {
+                Toast.makeText(requireContext(),"Error",Toast.LENGTH_LONG).show()
+            }
+
+        })
 
         return view
     }

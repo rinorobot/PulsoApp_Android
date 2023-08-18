@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.content.ContextCompat
 import com.rinosystems.pulsoapp.databinding.ActivityDetalleNoticiaBinding
+import com.rinosystems.pulsoapp.models.NewsDataItem
 import com.rinosystems.pulsoapp.models.NoticiasData
 import com.squareup.picasso.Picasso
 
@@ -21,7 +22,7 @@ class DetalleNoticia : AppCompatActivity() {
         window.navigationBarColor =  ContextCompat.getColor(this,R.color.pulsoappcolor)
 
 
-        val noticia = intent.getParcelableExtra<NoticiasData>("noticia")
+        val noticia = intent.getParcelableExtra<NewsDataItem>("noticia")
 
         if (noticia != null){
             binding.detalleNoticiaTitulo.text = noticia.titulo

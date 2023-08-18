@@ -8,11 +8,12 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.rinosystems.pulsoapp.R
+import com.rinosystems.pulsoapp.models.NewsDataItem
 import com.rinosystems.pulsoapp.models.NoticiasData
 import com.squareup.picasso.Picasso
 import java.util.ArrayList
 
-class NoticiasAdapter(private val noticiasList: ArrayList<NoticiasData>, val itemClickListener: MyViewHolder.OnNoticiasClickListener): RecyclerView.Adapter<NoticiasAdapter.MyViewHolder>() {
+class NoticiasAdapter(private val noticiasList: ArrayList<NewsDataItem>, val itemClickListener: MyViewHolder.OnNoticiasClickListener): RecyclerView.Adapter<NoticiasAdapter.MyViewHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -48,7 +49,7 @@ class NoticiasAdapter(private val noticiasList: ArrayList<NoticiasData>, val ite
 
         interface OnNoticiasClickListener{
 
-            fun onItemClick(noticia: NoticiasData)
+            fun onItemClick(noticia: NewsDataItem)
 
         }
 
