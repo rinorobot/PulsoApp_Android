@@ -9,9 +9,10 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.rinosystems.pulsoapp.R
+import com.rinosystems.pulsoapp.models.Numero
 import com.squareup.picasso.Picasso
 
-class PublicacionItemAdapter(private val context: Context, private val titulos: List<String>, private val lista_portadas: List<String>,private  val lista_url: List<String>, val itemClickListener: PublicacionItemViewHolder.OnNoticiasClickListener): RecyclerView.Adapter<PublicacionItemAdapter.PublicacionItemViewHolder>() {
+class PublicacionItemAdapter(private val context: Context, private val numeros: List<Numero>, val itemClickListener: PublicacionItemViewHolder.OnNoticiasClickListener): RecyclerView.Adapter<PublicacionItemAdapter.PublicacionItemViewHolder>() {
 
 
 
@@ -33,14 +34,14 @@ class PublicacionItemAdapter(private val context: Context, private val titulos: 
     }
 
     override fun onBindViewHolder(holder: PublicacionItemViewHolder, position: Int) {
-        Picasso.get().load(lista_portadas[position]).into(holder.portada)
-        holder.titulo.text = titulos[position]
+        Picasso.get().load(numeros[position].portada).into(holder.portada)
+        holder.titulo.text = numeros[position].titulo
         holder.ver_publi.setOnClickListener {
-            itemClickListener.onItemClick(lista_url[position])
+            itemClickListener.onItemClick(numeros[position].url)
         }
     }
 
     override fun getItemCount(): Int {
-        return titulos.size
+        return numeros.size
     }
 }

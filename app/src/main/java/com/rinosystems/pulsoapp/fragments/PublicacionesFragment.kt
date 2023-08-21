@@ -15,6 +15,7 @@ import com.rinosystems.pulsoapp.adapters.NoticiasAdapter
 import com.rinosystems.pulsoapp.adapters.PublicacionItemAdapter
 import com.rinosystems.pulsoapp.adapters.TitulosPublicacionesAdapter
 import com.rinosystems.pulsoapp.models.NoticiasData
+import com.rinosystems.pulsoapp.models.NuevoDataPublicaciones
 import com.rinosystems.pulsoapp.models.NuevoDataPublicacionesItem
 import com.rinosystems.pulsoapp.models.TitulosPublicaciones
 import retrofit2.Call
@@ -28,7 +29,8 @@ class PublicacionesFragment : Fragment(){
     lateinit var rv_titulos: RecyclerView
    // lateinit var adapter_titulos: TitulosPublicacionesAdapter
     private lateinit var dbRef: DatabaseReference
-    private lateinit var titulosLista: ArrayList<TitulosPublicaciones>
+   // private lateinit var titulosLista: ArrayList<TitulosPublicaciones> para Firebase
+    private lateinit var listaPublicaciones: NuevoDataPublicaciones
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -46,31 +48,17 @@ class PublicacionesFragment : Fragment(){
         rv_titulos.layoutManager = LinearLayoutManager(requireContext())
         rv_titulos.setHasFixedSize(true)
 
-        titulosLista = arrayListOf()
+        //titulosLista = arrayListOf()
 
         obtenerTitulos()
 
-        val publicaciones = RetofitClient.apiPublicaciones.getPublicaciones()
 
-        publicaciones.enqueue(object : Callback<NuevoDataPublicacionesItem>{
-            override fun onResponse(
-                call: Call<NuevoDataPublicacionesItem>,
-                response: Response<NuevoDataPublicacionesItem>
-            ) {
-                println(response.body())
-            }
-
-            override fun onFailure(call: Call<NuevoDataPublicacionesItem>, t: Throwable) {
-                Toast.makeText(requireContext(),"Error",Toast.LENGTH_LONG).show()
-            }
-
-        })
 
         return view
     }
 
     private fun obtenerTitulos() {
-        dbRef = FirebaseDatabase.getInstance().getReference("revistas")
+      /*  dbRef = FirebaseDatabase.getInstance().getReference("revistas")
 
         dbRef.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
@@ -91,7 +79,25 @@ class PublicacionesFragment : Fragment(){
                 println("No se puedo obtener la lista")
             }
 
+        })*/
+        val publicaciones = RetofitClient.apiPublicaciones.getPublicaciones()
+
+        publicaciones.enqueue(object : Callback<NuevoDataPublicaciones>{
+            override fun onResponse(
+                call: Call<NuevoDataPublicaciones>,
+                response: Response<NuevoDataPublicaciones>
+            ) {
+                listaPublicaciones = response.body()!!
+                rv_titulos.adapter = TitulosPublicacionesAdapter(requireContext(),listaPublicaciones)
+            }
+
+            override fun onFailure(call: Call<NuevoDataPublicaciones>, t: Throwable) {
+                Toast.makeText(requireContext(),"Error",Toast.LENGTH_LONG).show()
+            }
+
+
         })
+
     }
 
 

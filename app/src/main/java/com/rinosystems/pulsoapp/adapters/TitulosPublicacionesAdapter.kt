@@ -11,9 +11,12 @@ import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.rinosystems.pulsoapp.R
+import com.rinosystems.pulsoapp.models.NuevoDataPublicaciones
+import com.rinosystems.pulsoapp.models.NuevoDataPublicacionesItem
+import com.rinosystems.pulsoapp.models.Numero
 import com.rinosystems.pulsoapp.models.TitulosPublicaciones
 
-class TitulosPublicacionesAdapter(private val context: Context, private val titulosPublicaciones: List<TitulosPublicaciones>): RecyclerView.Adapter<TitulosPublicacionesAdapter.ViewHolderPublicaciones>(),PublicacionItemAdapter.PublicacionItemViewHolder.OnNoticiasClickListener  {
+class TitulosPublicacionesAdapter(private val context: Context, private val titulosPublicaciones: NuevoDataPublicaciones): RecyclerView.Adapter<TitulosPublicacionesAdapter.ViewHolderPublicaciones>(),PublicacionItemAdapter.PublicacionItemViewHolder.OnNoticiasClickListener  {
 
 
 class ViewHolderPublicaciones(itemView: View): RecyclerView.ViewHolder(itemView){
@@ -29,7 +32,7 @@ class ViewHolderPublicaciones(itemView: View): RecyclerView.ViewHolder(itemView)
         val publicaciones = titulosPublicaciones[position]
 
         holder.tituloPublicacion.text = publicaciones.publicacion
-        cargarItemPublicaciones(holder.publicacion_item_rv,publicaciones.titulo!!,publicaciones.portada!!,publicaciones.url!!)
+        cargarItemPublicaciones(holder.publicacion_item_rv,publicaciones)
 
     }
 
@@ -37,9 +40,9 @@ class ViewHolderPublicaciones(itemView: View): RecyclerView.ViewHolder(itemView)
         return titulosPublicaciones.size
     }
 
-    private fun cargarItemPublicaciones(recyclerView: RecyclerView, titulos: List<String>, portadas: List<String>,urls: List<String>){
+    private fun cargarItemPublicaciones(recyclerView: RecyclerView, listaNumero: NuevoDataPublicacionesItem){
 
-        val itemRecyclerAdapter = PublicacionItemAdapter(context,titulos,portadas,urls,this)
+        val itemRecyclerAdapter = PublicacionItemAdapter(context,listaNumero.numeros,this)
         recyclerView.layoutManager = LinearLayoutManager(context,RecyclerView.HORIZONTAL,false)
         recyclerView.adapter = itemRecyclerAdapter
     }
