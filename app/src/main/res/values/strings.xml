@@ -9,4 +9,5 @@
     <string name="irSitio">Ir al sitio</string>
     <string name="leer">Leer </string>
     <string name="simulador_de_ex_menes">Simulador de exámenes</string>
+    <string name="default_notification_id" translatable="false">fcm_default_channel</string>
 </resources>

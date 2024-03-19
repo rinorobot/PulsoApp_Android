@@ -14,7 +14,7 @@ import com.rinosystems.pulsoapp.models.ExamenesData
 import com.squareup.picasso.Picasso
 import java.util.ArrayList
 
-class ExamenesAdapter(private val examenesLista: ArrayList<ExamenesData>, val itemClickListener: ExamenesViewHolder.OnNoticiasClickListener): RecyclerView.Adapter<ExamenesAdapter.ExamenesViewHolder>() {
+class ExamenesAdapter(private var examenesLista: List<ExamenesData>, val itemClickListener: ExamenesViewHolder.OnNoticiasClickListener): RecyclerView.Adapter<ExamenesAdapter.ExamenesViewHolder>() {
 
 
 
@@ -73,4 +73,7 @@ class ExamenesViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
     override fun getItemCount(): Int {
      return   examenesLista.size
     }
+
+
+
 }
